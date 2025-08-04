@@ -58,9 +58,36 @@ function App() {
 
 
 
-const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
-const citrus = fruits.slice(1, 3);
-console.log(citrus);
+// const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+// const citrus = fruits.slice(1, 3);
+// console.log(citrus);
+
+
+
+// const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+// const citrus = fruits.splice(2,0,"coconut","jackfruit")
+// console.log(fruits);  //splice মূল array কে পরিবর্তন করে দেয় 
+
+
+
+// const numbers1 = [1,2,3,4,5]
+// const numbers2 = [6,7,8,9,10]
+// const total = numbers1.concat(numbers2)
+// console.log(total);
+
+
+
+// const numbers = [1,2,3,4,5]
+// numbers.push(5,6,7,8,9)
+// console.log(numbers);  //push মূল array কে পরিবর্তন করে দেয় 
+
+
+
+// const numbers = [1,2,3,4,5,6,7,8]
+// const result = numbers.map((num)=>{
+//  return num*5   // map মূল array কে পরিবর্তন করেনা বরঞ্চ নতুন array তৈরি করে
+// })
+// console.log(result);
 
 
   return (
