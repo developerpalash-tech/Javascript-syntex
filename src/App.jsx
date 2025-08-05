@@ -90,6 +90,40 @@ function App() {
 // console.log(result);
 
 
+
+// const numbers = [1,2,3,4,5,6,7,8]
+// const sum = numbers.reduce((preveValue, currentValue, currentIndex, arr)=>{
+//   return preveValue-currentValue
+// },0)
+// console.log(sum);
+
+
+
+// for(let i=0; i<=5; i++){
+//   console.log(i);
+// }
+
+// let i=0;
+// for(; ;i++){
+//  if(i<=5){
+//   console.log(i);
+//  }else{
+//   break
+//  }
+// }
+
+const myObject = {
+  "name" : "javascript",
+  "estd" : "1995",
+  "founder" : "brandon eich",
+}
+for(let property in myObject){
+  console.log(property);
+  console.log(myObject[property]);
+}
+
+
+
   return (
     <>
       <h1 className='text-red-400'>My name is </h1>
