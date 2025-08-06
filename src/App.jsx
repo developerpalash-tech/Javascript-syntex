@@ -112,16 +112,54 @@ function App() {
 //  }
 // }
 
-const myObject = {
-  "name" : "javascript",
-  "estd" : "1995",
-  "founder" : "brandon eich",
-}
-for(let property in myObject){
-  console.log(property);
-  console.log(myObject[property]);
-}
+// const myObject = {
+//   "name" : "javascript",
+//   "estd" : "1995",
+//   "founder" : "brandon eich",
+// }
+// for(let property in myObject){
+//   console.log(property);
+//   console.log(myObject[property]);
+// }
 
+// const myArray = [1,2,3,4,5,6,7,8,9]
+// for(let element of myArray){
+//   console.log(element);
+// }
+
+// const myString = "My name is Mr. Palash Rakshit"
+// for(let element of myString){
+//   console.log(element);
+// }
+
+
+
+
+// const myObject = {
+//   "name" : "javascript",
+//   "estd" : "1995",
+//   "founder" : "brandon eich",
+// }
+// const myKeys = Object.keys(myObject)
+// console.log(myKeys);
+// const myValues = Object.values(myObject)
+// console.log(myValues);
+// const myEntries = Object.entries(myObject)
+// console.log(myEntries);
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const myEntries = Object.entries(fruits)
+// console.log(myEntries);
+
+
+
+
+// default parameter value of function
+
+// function myFunc(x=10){
+//   return x
+// }
+// console.log(myFunc(undefined));
 
 
   return (
