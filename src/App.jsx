@@ -162,6 +162,84 @@ function App() {
 // console.log(myFunc(undefined));
 
 
+
+// spread operator of array
+
+// const numbers = [1,2,3]
+// const a = [...numbers]
+// const newNumber = [...a,4,5,6]
+// console.log(newNumber);
+// numbers.push(5)
+// console.log(a)
+
+
+// spread operator of object
+
+// const object1 = {
+//   a:1,
+//   b:2,
+// }
+// const object2 = {
+//   x:1,
+//   y:2,
+// }
+// console.log({...object1,...object2});
+
+
+
+
+// rest operator 
+
+// function myFunc(a,...params){
+//   console.log(a);
+//   console.log(params);
+// }
+// myFunc(1,2,3,4)
+
+
+
+// object destructuring
+
+// const myObject = {
+//   id:150,
+//   name:"palash",
+//   age:40,
+  // education:{
+  //   degree:"masters",
+  // }
+//}
+// const {name} = myObject
+//or 
+//const {name:title} = myObject
+//console.log(title);
+
+// const {education:{degree:x}} = myObject
+// console.log(x);
+
+// const {education:{degree:x} = {}} = myObject //error komanor jonno
+// console.log(x);
+
+
+
+// array destructuring
+
+// const number = [1,2,3,4]
+// const [,,a,b] = number
+// console.log(a,b);
+// or
+// const numbers = [1,2,[3,4,5],6,7]
+// const [,,[,a,b]] = numbers
+// console.log(a,b)
+
+
+
+// swap
+
+// var a = 1;
+// var b = 2;
+// [b,a] = [a,b];
+// console.log(a,b);
+
   return (
     <>
       <h1 className='text-red-400'>My name is </h1>
