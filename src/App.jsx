@@ -240,11 +240,28 @@ function App() {
 // [b,a] = [a,b];
 // console.log(a,b);
 
+
+
+// Tagged template literal
+
+function myFunc(strings,...values){
+  const p = strings.reduce((prev, current)=>{
+    return prev + current + (values.length? "Mr. " + values.shift():'')
+  },'')
+  return p
+}
+const actor1 = "Sharukh Khan";
+const actor2 = "Salman Khan";
+console.log(myFunc`Bollywood have two super hero ${actor1} and ${actor2} on their film industries`);
+
+
   return (
     <>
       <h1 className='text-red-400'>My name is </h1>
       <h2 className='font-bold text-blue-600'>I am a programmer</h2>
 
+
+  
    
     </>
   )
