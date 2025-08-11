@@ -244,17 +244,117 @@ function App() {
 
 // Tagged template literal
 
-function myFunc(strings,...values){
-  const p = strings.reduce((prev, current)=>{
-    return prev + current + (values.length? "Mr. " + values.shift():'')
-  },'')
-  return p
+// function myFunc(strings,...values){
+//   const p = strings.reduce((prev, current)=>{
+//     return prev + current + (values.length? "Mr. " + values.shift():'')
+//   },'')
+//   return p
+// }
+// const actor1 = "Sharukh Khan";
+// const actor2 = "Salman Khan";
+// console.log(myFunc`Bollywood have two super hero ${actor1} and ${actor2} on their film industries`);
+
+
+
+
+// set
+
+function myFunc(anything){
+  return console.log(anything);  
 }
-const actor1 = "Sharukh Khan";
-const actor2 = "Salman Khan";
-console.log(myFunc`Bollywood have two super hero ${actor1} and ${actor2} on their film industries`);
+// let mySet = new Set()
+// myFunc(mySet)
 
+// mySet.add(8)
+// mySet.add("Bangladesh")
+// mySet.delete("Bangladesh")
+// myFunc(mySet.has("Bangladesh"))
 
+// mySet.add(8).add(7).add("Russia")
+// myFunc(mySet)
+
+// mySet.add(8).add(7).add("Russia").delete(7)
+// myFunc(mySet)
+
+// mySet.add(8).add(7).add("Russia").clear()
+// myFunc(mySet)
+
+// mySet.add(8).add(7).add("Russia")
+// myFunc(mySet.size)
+
+// let myArray = [1,2,3,4,5]
+// let mySet = new Set(myArray)
+// myFunc(mySet)
+
+// let myArray = [1,2,3,4,5]
+// let mySet = new Set(myArray)
+// for(let value of mySet){
+//   myFunc(value)
+// }
+// myFunc(mySet)
+
+// let myArray = [1,2,3,4,5]
+// let mySet = new Set(myArray)
+// myFunc([...mySet])
+// or
+// let myArray = [1,2,3,4,5]
+// let mySet = new Set(myArray)
+// myFunc(Array.from(mySet))
+
+// let myArray = [1,2,3,4,5]
+// let mySet = new Set(myArray)
+// mySet.add(6)
+// myFunc(mySet)
+
+// let myArray = [1,2,3,4,5]
+// let mySet = new Set(myArray)
+// mySet.add(4)
+// myFunc(mySet)
+
+// let mySet = new Set("Bangladesh")
+// mySet.add('B')
+// myFunc(mySet)
+
+// let myArray = [1,2,3,4,5]
+// let mySet = new Set(myArray)
+// mySet.add({
+//   a:1,
+//   b:2,
+// })
+// mySet.add({
+//   a:1,
+//   b:2,
+// })
+// myFunc(mySet)
+
+// let myArray = [1,2,3,4,5]
+// let myObject = {
+//   a:1,
+//   b:2,
+// }
+// let mySet = new Set(myArray)
+// mySet.add(myObject)
+// mySet.add(myObject)
+// mySet.add(myObject)
+// myFunc(mySet)
+
+// let myArray = [1,2,3,4,4,4,5,6,7,8,8,9,9,9]
+// myFunc([...new Set(myArray)])
+
+// let a = new Set([1,2,3])
+// let b = new Set([3,4,1])
+// let union = new Set([...a,...b])
+// myFunc(union)
+
+// let a = new Set([1,2,3])
+// let b = new Set([3,4,1])
+// let intersection = new Set([...a].filter(x=>b.has(x)))
+// myFunc(intersection)
+
+let a = new Set([1,2,3])
+let b = new Set([3,4,1])
+let deference = new Set([...a].filter(x=>!b.has(x)))
+myFunc(deference)
   return (
     <>
       <h1 className='text-red-400'>My name is </h1>
