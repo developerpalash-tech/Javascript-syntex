@@ -65,7 +65,7 @@ function App() {
 
 
 // const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
-// const citrus = fruits.splice(2,0,"coconut","jackfruit")
+// fruits.splice(2,0,"coconut","jackfruit")
 // console.log(fruits);  //splice মূল array কে পরিবর্তন করে দেয় 
 
 
@@ -259,9 +259,9 @@ function App() {
 
 // set
 
-function myFunc(anything){
-  return console.log(anything);  
-}
+// function myFunc(anything){
+//   return console.log(anything);  
+// }
 // let mySet = new Set()
 // myFunc(mySet)
 
@@ -351,10 +351,35 @@ function myFunc(anything){
 // let intersection = new Set([...a].filter(x=>b.has(x)))
 // myFunc(intersection)
 
-let a = new Set([1,2,3])
-let b = new Set([3,4,1])
-let deference = new Set([...a].filter(x=>!b.has(x)))
-myFunc(deference)
+// let a = new Set([1,2,3])
+// let b = new Set([3,4,1])
+// let deference = new Set([...a].filter(x=>!b.has(x)))
+// myFunc(deference)
+
+
+
+// copyWithin
+
+// copyWithin(target,start,end)
+
+// const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango","jackfruit"];
+// fruits.copyWithin(3,0,2)
+// fruits.copyWithin(3,2)
+// fruits.copyWithin(3)
+// const test = fruits.copyWithin(-5,-4,-2)
+// console.log(test);
+
+
+// toReversed method
+
+// const arr = [1,2,3,4,5,6]
+// const reverse = arr.toReversed()
+// console.log(reverse);
+// console.log(arr);
+
+
+
+
   return (
     <>
       <h1 className='text-red-400'>My name is </h1>
