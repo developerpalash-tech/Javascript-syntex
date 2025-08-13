@@ -379,6 +379,33 @@ function App() {
 
 
 
+// block scope
+// {
+//   let x = "this is block scope"   // block scope is not access out side of block
+//   console.log(x);
+//   const y = "this is also block scope"
+//   console.log(y);
+// }
+
+// function scope
+
+function myFunc(){
+  const x = "this is function scope"  // Variables defined inside a function are not accessible (visible) from outside the function
+  console.log(x);
+}
+myFunc()
+
+// global scope
+var x = "this is function scope";   //  Global variables can be accessed from anywhere in a JavaScript program
+console.log(x);
+
+let y = "this is function scope";
+console.log(y);
+
+const z = "this is function scope";
+console.log(z);
+
+
 
   return (
     <>
