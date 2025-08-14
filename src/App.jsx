@@ -389,24 +389,40 @@ function App() {
 
 // function scope
 
-function myFunc(){
-  const x = "this is function scope"  // Variables defined inside a function are not accessible (visible) from outside the function
-  console.log(x);
+// function myFunc(){
+//   const x = "this is function scope"  // Variables defined inside a function are not accessible (visible) from outside the function
+//   console.log(x);
+// }
+// myFunc()
+
+// // global scope
+// var x = "this is function scope";   //  Global variables can be accessed from anywhere in a JavaScript program
+// console.log(x);
+
+// let y = "this is function scope";
+// console.log(y);
+
+// const z = "this is function scope";
+// console.log(z);
+
+
+// const num1 = 2;
+// const num2 = 3;
+// const sum = function(){
+//   return num1 + num2
+// }
+// console.dir(sum());
+
+
+const num1 = 2;
+
+const sum = function(){
+  const num2 = 3;
+  return function(){
+    return num1 + num2;
+  }
 }
-myFunc()
-
-// global scope
-var x = "this is function scope";   //  Global variables can be accessed from anywhere in a JavaScript program
-console.log(x);
-
-let y = "this is function scope";
-console.log(y);
-
-const z = "this is function scope";
-console.log(z);
-
-
-
+console.dir(sum())
   return (
     <>
       <h1 className='text-red-400'>My name is </h1>
