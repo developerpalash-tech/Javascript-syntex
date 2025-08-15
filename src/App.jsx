@@ -395,7 +395,7 @@ function App() {
 // }
 // myFunc()
 
-// // global scope
+// global scope
 // var x = "this is function scope";   //  Global variables can be accessed from anywhere in a JavaScript program
 // console.log(x);
 
@@ -411,18 +411,46 @@ function App() {
 // const sum = function(){
 //   return num1 + num2
 // }
-// console.dir(sum());
+// console.dir(sum);
 
 
-const num1 = 2;
+// const num1 = 2;
 
-const sum = function(){
-  const num2 = 3;
-  return function(){
-    return num1 + num2;
-  }
+// const sum = function(){
+//   const num2 = 3;
+//   return function(){
+//     return num1+num2;
+//   }
+// }
+// const myFunc = sum()
+// console.dir(myFunc)
+
+
+
+// function backAccount(initialBalance){
+//   const balance = initialBalance
+//   return function(){
+//     return balance
+//   }
+// }
+// const account = backAccount(100000)
+// console.dir(account);
+
+
+
+let counter = 0;
+
+// Function to increment counter
+function add() {
+  counter += 1;
 }
-console.dir(sum())
+
+// Call add() 3 times
+add();
+add();
+add();
+console.log(counter);
+
   return (
     <>
       <h1 className='text-red-400'>My name is </h1>
