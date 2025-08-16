@@ -438,18 +438,17 @@ function App() {
 
 
 
-let counter = 0;
-
-// Function to increment counter
-function add() {
-  counter += 1;
+function outer(){
+  var x = 100;
+  function inner(){
+    console.log(x);
+  }
+  x = 50;
+  return inner
 }
+var innerFunc = outer();
+innerFunc()
 
-// Call add() 3 times
-add();
-add();
-add();
-console.log(counter);
 
   return (
     <>
