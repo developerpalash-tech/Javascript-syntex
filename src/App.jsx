@@ -438,16 +438,114 @@ function App() {
 
 
 
-function outer(){
-  var x = 100;
-  function inner(){
-    console.log(x);
+// function outer(){
+//   var x = 100;
+//   function inner(){
+//     console.log(x);
+//   }
+//   x = 50;
+//   return inner
+// }
+// var innerFunc = outer();
+// innerFunc()
+
+
+
+// function
+
+// function myFunc(){
+//   console.log("I am web developer");
+//   console.log("I am frontend developer");
+// }
+// myFunc()
+
+// const myAnotherFunc = function(){
+//   console.log("I am web developer");
+//   console.log("I am frontend developer");
+// }
+// console.log(myAnotherFunc)
+// myAnotherFunc()
+
+// const myPracticeFunc = function(param1,param2){
+//   console.log("printing...",param1,param2)
+// }
+// myPracticeFunc("I am from","Bangladesh")
+// myPracticeFunc("I am from",9043)
+// myPracticeFunc("I am from",true)
+
+
+// function sum(a,b){
+//   const res = a + b;
+//   return res;
+// }
+// console.log(sum(4,6));
+
+// function calculation(a , b){
+//   return 2*(a + b);
+// }
+// console.log(calculation(3 , 5));
+
+
+// function calculation(a = 0 , b = 0){
+//   return 2*(a + b);
+// }
+// console.log(calculation(3 , 5));
+
+// function collectThis(x , ...y){             // rest parameter must be last parameter
+//   console.log(x);
+//   console.log(y);
+// }
+// collectThis(1,2,3,4,5,6,7,8,9,10);
+
+
+// function printThis(a){             // regular process
+//   console.log(a)
+// }
+// printThis("Yes it is")
+
+// const printThis = (a) => {           // new process
+//   console.log(a)
+// }
+// printThis("Yes it is")
+
+// function print(a){                   // regular process
+//   return 2*a
+// }  
+// console.log(print(3));
+
+// const print = (a) => 2*a              // new process
+// console.log(print(3));
+
+
+// function x(){
+//   console.log("x", this);
+// }
+// x()
+ 
+
+// function outerFunction(){
+//   console.log("this is outerfunction");
+
+//   function innerFunction(){
+//     console.log("this is innerfunction")
+//   }
+//   innerFunction()
+// }
+// outerFunction()
+
+
+function outerFunction(a){
+  console.log("this is outerfunction");
+
+  function innerFunction(){
+    console.log("this is innerfunction")
+    return a*5
   }
-  x = 50;
-  return inner
+    return innerFunction
 }
-var innerFunc = outer();
-innerFunc()
+// outerFunction(6)
+const result = outerFunction(6)
+result()
 
 
   return (
