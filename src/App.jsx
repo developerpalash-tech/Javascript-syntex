@@ -411,7 +411,7 @@ function App() {
 // const sum = function(){
 //   return num1 + num2
 // }
-// console.dir(sum);
+// console.log(sum);
 
 
 // const num1 = 2;
@@ -534,20 +534,51 @@ function App() {
 // outerFunction()
 
 
-function outerFunction(a){
-  console.log("this is outerfunction");
+// function outerFunction(a){
+//   console.log("this is outerfunction");
 
-  function innerFunction(){
-    console.log("this is innerfunction")
-    return a*5
+//   function innerFunction(){
+//     console.log("this is innerfunction")
+//     return a * 5
+//   }
+//     return innerFunction
+// }
+// console.log(outerFunction(6))
+// const result = outerFunction(6)
+// console.log(result())
+
+
+// callback function
+
+// function myFunc(buz){
+//   if(timeForBuz){
+//     buz()
+//   }
+// }
+// function buz(){
+//   console.log("buz");
+// }
+// myFunc(buz)
+
+
+// higher order function
+
+// function getCapture(camera){
+//   camera()
+// }
+// getCapture(function(){
+//   console.log("canon");
+// })
+
+// Higher order function আরেকটা ফাংশনকে return ও করতে পারে
+
+function returnFunc(){
+  return function(){
+    console.log("Hi")
   }
-    return innerFunction
 }
-// outerFunction(6)
-const result = outerFunction(6)
-result()
-
-
+console.log(returnFunc())
+returnFunc()()
   return (
     <>
       <h1 className='text-red-400'>My name is </h1>
