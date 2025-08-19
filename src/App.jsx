@@ -572,13 +572,77 @@ function App() {
 
 // Higher order function আরেকটা ফাংশনকে return ও করতে পারে
 
-function returnFunc(){
-  return function(){
-    console.log("Hi")
+// function returnFunc(){
+//   return function(){
+//     console.log("Hi")
+//   }
+// }
+// console.log(returnFunc())
+// returnFunc()()
+
+
+// group of function
+
+// (function(){
+//    alert("I am anonymous function")
+// })()
+
+
+// recurson
+
+// function fetchwater(count){
+//   if(count===0){
+//     console.log("No more attempt left to fetch water", count)
+//     return
+//   }
+//   console.log("fetching water...");
+//   fetchwater(count-1)
+// }
+// fetchwater(5)
+
+
+// ============== Prototype
+
+// const captain = {
+//   name : "Mashrafi",
+//   age : 35,
+//   country : "Bangladesh",
+// }
+// const player = Object.create(captain)
+// console.log(player.country)
+// console.log(player.name)
+
+
+// function test(){}
+// console.dir(test.prototype);
+
+
+function myFunc(name, age){
+  let person = Object.create(myFunc.prototype);
+  person.name = name;
+  person.age = age;
+  return person;
+}
+myFunc.prototype = {
+  eat(){
+    console.log(`person is eating`)
+  },
+  sleep(){
+    console.log("person is sleeping")
+  },
+  play(){
+    console.log("person is playing")
   }
 }
-console.log(returnFunc())
-returnFunc()()
+const liton = myFunc("Liton", 35)
+liton.eat()
+
+const mashrafi = myFunc("Mashrafi", 40)
+mashrafi.play()
+
+
+
+
   return (
     <>
       <h1 className='text-red-400'>My name is </h1>
