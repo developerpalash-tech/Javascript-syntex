@@ -617,31 +617,79 @@ function App() {
 // console.dir(test.prototype);
 
 
-function myFunc(name, age){
-  let person = Object.create(myFunc.prototype);
-  person.name = name;
-  person.age = age;
-  return person;
-}
-myFunc.prototype = {
-  eat(){
-    console.log(`person is eating`)
-  },
-  sleep(){
-    console.log("person is sleeping")
-  },
-  play(){
-    console.log("person is playing")
-  }
-}
-const liton = myFunc("Liton", 35)
-liton.eat()
+// function myFunc(name, age){
+//   let person = Object.create(myFunc.prototype);
+//   person.name = name;
+//   person.age = age;
+//   return person;
+// }
+// myFunc.prototype = {
+//   eat(){
+//     console.log(`person is eating`)
+//   },
+//   sleep(){
+//     console.log("person is sleeping")
+//   },
+//   play(){
+//     console.log("person is playing")
+//   }
+// }
+// const liton = myFunc("Liton", 35)
+// liton.eat()
 
-const mashrafi = myFunc("Mashrafi", 40)
-mashrafi.play()
+// const mashrafi = myFunc("Mashrafi", 40)
+// mashrafi.play()
+
+// or
+
+
+// function Person(name, age){
+//   this.name = name;
+//   this.age = age;
+// }
+// Person.prototype = {
+//    eat(){
+//     console.log(`person is eating`)
+//   },
+//   sleep(){
+//     console.log("person is sleeping")
+//   },
+//   play(){
+//     console.log("person is playing")
+//   }
+// }
+// const liton = new Person("Liton", 35)
+// liton.play()
+// const mashrafi = new Person("Mashrafi", 40)
+// mashrafi.eat()
+
+// or
+
+// class Person{
+//   constructor(name, age){
+//     this.name = name;
+//     this.age = age;
+//   }
+//   eat(){
+//     console.log(`person is eating`)
+//   }
+//   sleep(){
+//     console.log("person is sleeping")
+//   }
+//   play(){
+//     console.log("person is playing")
+//   }
+// }
+// const liton = new Person("Liton", 35)
+// liton.play()
+// const mashrafi = new Person("Mashrafi", 40)
+// mashrafi.eat()
 
 
 
+// let person = []
+// let person = new Array()
+// console.log(person);
 
   return (
     <>
