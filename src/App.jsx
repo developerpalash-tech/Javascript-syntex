@@ -692,18 +692,99 @@ function App() {
 // console.log(person);
 
 
-function Person(first, last, age, eye) {
-  this.firstName = first;
-  this.lastName = last;
-  this.age = age;
-  this.eyeColor = eye;
-}
+// function Person(first, last, age, eye) {
+//   this.firstName = first;
+//   this.lastName = last;
+//   this.age = age;
+//   this.eyeColor = eye;
+// }
 
-Person.prototype.nationality = "English";
+// Person.prototype.nationality = "English";
 
-const myFather = new Person("John", "Doe", 50, "blue");
-console.log(myFather.nationality)
+// const myFather = new Person("John", "Doe", 50, "blue");
+// console.log(myFather.nationality)
 
+
+// function Person(name, age){
+//   this.name = name;
+//   this.age = age;
+//   } 
+
+//  Person.prototype = {
+//      eat : function(){
+//     console.log(`${this.name} is eating`);
+//   }
+//  }
+// const palash = new Person("Palash", 40)
+// console.log(palash)
+// const rakshit = new Person("Rakshit", 40)
+// console.log(rakshit)
+
+
+// var f = function Person(){}
+
+// Object.prototype.palash = function(){
+//   console.log("I am Palash")
+// }
+// var p = {}
+// p.palash()
+
+// this keyword
+
+// implicit binding
+
+// const palash = {
+//   name : "Palash",
+//   age : 40,
+//   printPlayerName : function(){
+//   console.log(this.name)
+// }
+// }
+// palash.printPlayerName()
+
+
+// const Person = function(name,age){
+//   return {
+//     name : name,
+//     age : age,
+//     printName : function(){
+//       console.log(this.name);
+//     },
+//     brother : {
+//       name : "Rakshit",
+//       age : 40,
+//       printName : function(){
+//         console.log(this.name)
+//       }
+//     }
+//   }
+// }
+// const palash = Person("Palash",40)
+// palash.printName()
+// palash.brother.printName()
+
+
+// explicit binding
+
+// var printPlayerNameFunction = function(obj){
+//   obj.printPlayerName= function(){
+//     console.log(this.name);
+//   }
+  
+// }
+
+// var palash = {
+//   name : "Palash",
+//   age : 40,
+// };
+// var rakshit = {
+//   name : "Rakshit",
+//   age : 40,
+// };
+// printPlayerNameFunction(palash)
+// printPlayerNameFunction(rakshit)
+// palash.printPlayerName()
+// rakshit.printPlayerName()
   return (
     <>
       <h1 className='text-red-400'>My name is </h1>
