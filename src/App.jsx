@@ -785,6 +785,85 @@ function App() {
 // printPlayerNameFunction(rakshit)
 // palash.printPlayerName()
 // rakshit.printPlayerName()
+
+
+
+// const printName = function(){
+//   console.log(this.name)
+// }
+// const palash = {
+//   name : "Palash",
+//   age : 40,
+// };
+// printName.call(palash)
+
+
+// const printName = function(p1,p2,p3){
+//   console.log(`${this.name} is a ${p1} ${p2} from ${p3}`)
+// }
+// const palash = {
+//   name : "Palash",
+//   age : 40,
+// };
+// const p1 = "senior"
+// const p2 = "web developer"
+// const p3 = "Bangladesh"
+// printName.call(palash,p1,p2,p3)
+
+
+// const printName = function(p1,p2,p3){
+//   console.log(`${this.name} is a ${p1} ${p2} from ${p3}`)
+// }
+// const palash = {
+//   name : "Palash",
+//   age : 40,
+// };
+// const p1 = "senior"
+// const p2 = "web developer"
+// const p3 = "Bangladesh"
+// const newFunc = printName.bind(palash,p1,p2,p3)
+// newFunc()
+
+
+// const printName = function(p1,p2,p3){
+//   console.log(`${this.name} is a ${p1} ${p2} from ${p3}`)
+// }
+// const palash = {
+//   name : "Palash",
+//   age : 40,
+// };
+// const p1 = "senior"
+// const p2 = "web developer"
+// const p3 = "Bangladesh"
+// const p = [p1,p2,p3]
+// printName.apply(palash,p)
+
+
+// new binding
+
+// function Person(name,age){
+//   this.name = name,
+//   this.age = age
+//   console.log(`${this.name} is ${this.age} years old`);
+// }
+// new Person("Rakshit", 40)
+
+
+// window binding
+
+// "use strict"
+// function printName(){
+//   console.log(this.name);
+  
+// }
+// const palash = {
+//   name : "Palash",
+// };
+// printName()
+
+
+
+
   return (
     <>
       <h1 className='text-red-400'>My name is </h1>
