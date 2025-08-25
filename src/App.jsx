@@ -581,6 +581,100 @@ function App() {
 // returnFunc()()
 
 
+// const number = [1,2,3,4]
+// const result = [];
+// for(let i = 0; i<number.length; i++){
+//   result.push(number[i]*2)
+// }
+// console.log(result);
+
+// uporer example ti ekti traditional/old poddoti
+// niche higher order function poddotite  eti kora holo
+{
+const numbers = [1,2,3,4,5]
+const result = numbers.map(function(number){
+  return number*2
+})
+console.log(result);
+}
+
+// uporer exampleti latest poddotite niche kora holo
+
+{
+  const numbers = [1,2,3,4,5]
+  const result = numbers.map((number)=>number*3)
+  console.log(result)
+}
+
+// nicher example ti ekti traditional/old poddoti
+{
+  const plyers = [
+  { name : 'messi',
+    goal : 950
+  },
+  {
+    name : 'ronaldo',
+    goal : 1050
+  },
+  {
+    name : 'nymer',
+    goal : 540
+  },
+  {
+    name : 'embappe',
+    goal : 270
+  }
+  ]
+   const goalAboveNineHundred = [];
+
+   for(let i = 0; i < plyers.length; i++){
+      if(plyers[i].goal >= 900){
+        goalAboveNineHundred.push(plyers[i])
+      }
+   }
+   console.log(goalAboveNineHundred);
+   
+}
+{
+  const plyers = [
+  { name : 'messi',
+    goal : 950
+  },
+  {
+    name : 'ronaldo',
+    goal : 1050
+  },
+  {
+    name : 'nymer',
+    goal : 540
+  },
+  {
+    name : 'embappe',
+    goal : 270
+  }
+]
+  const goalAboveNineHundred = plyers.filter(num => num.goal >900)
+  .map(player => player.name)
+  console.log(goalAboveNineHundred);
+  
+}
+{
+  const numbers = [5, 12, 8, 20, 7, 15];
+  const even = numbers.filter(number => number%2===0)
+  console.log(even)
+}
+{
+  const numbers = [5, 12, 8, 20, 7, 15];
+  const multiply = numbers.map(num => num*2)
+  console.log(multiply)
+}
+{
+  const numbers = [5, 12, 8, 20, 7, 15];
+  const sum = numbers.reduce((acc, currentValue) => acc + currentValue, 0)
+  console.log(sum);
+  
+}
+
 // group of function
 
 // (function(){
