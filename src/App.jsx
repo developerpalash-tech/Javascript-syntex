@@ -956,27 +956,44 @@ console.log(result);
 // printName()
 
 
-function myDisplayer(some) {
-  document.getElementById("demo").innerHTML = some;
-}
+// function myDisplayer(some) {
+//   document.getElementById("demo").innerHTML = some;
+// }
 
-let myPromise = new Promise(function(myResolve, myReject) {
-  let x = 0;
+// let myPromise = new Promise(function(myResolve, myReject) {
+//   let x = 0;
 
-// some code (try to change x to 5)
+// // some code (try to change x to 5)
 
-  if (x == 0) {
-    myResolve("OK");
-  } else {
-    myReject("Error");
-  }
-});
+//   if (x == 0) {
+//     myResolve("OK");
+//   } else {
+//     myReject("Error");
+//   }
+// });
 
-myPromise.then(
-  function(value) {myDisplayer(value);},
-  function(error) {myDisplayer(error);}
-);
-console.log(myPromise)
+// myPromise.then(
+//   function(value) {myDisplayer(value);},
+//   function(error) {myDisplayer(error);}
+// );
+// console.log(myPromise)
+
+
+
+// Recursoin 
+
+// function sum(n){
+//   if(n===0){
+//     return 0
+//   }else{
+//     return sum(n-1)+n
+//   }
+// }
+// console.log(sum(10000))
+
+
+// const n = 100000;
+// console.log(n*(n+1)/2)
   return (
     <>
       <h1 className='text-red-400'>My name is </h1>
