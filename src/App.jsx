@@ -994,12 +994,21 @@ console.log(result);
 
 // const n = 100000;
 // console.log(n*(n+1)/2)
+
+
+setTimeout(myFunction, 3000);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "I love You !!";
+}
+
   return (
     <>
       <h1 className='text-red-400'>My name is </h1>
       <h2 className='font-bold text-blue-600'>I am a programmer</h2>
-
-
+     <h1 id="demo"></h1>
+      
+       
   
    
     </>
