@@ -1,5 +1,6 @@
 
 import './App.css'
+import _ from "lodash";
 
 function App() {
   
@@ -996,17 +997,37 @@ console.log(result);
 // console.log(n*(n+1)/2)
 
 
-setTimeout(myFunction, 3000);
 
-function myFunction() {
-  document.getElementById("demo").innerHTML = "I love You !!";
-}
+// primitive vs referance
+
+// const language = {
+//   name : "Javascript",
+//   estd : "1995",
+// }
+// const language2 = {...language}  // mutably copy
+// language.founder = "Brandon Eich"
+// console.log(language)
+// console.log(language2)
+
+
+// const language = {
+//   name : "Javascript",
+//   estd : "1995",
+//   libreries :["react", "vue", "JQuery"]
+// }
+// const language2 = _.cloneDeep(language);   // deeply nested object thakle lodash bebohar korte hobe
+// language.libreries.push("Angular")
+// console.log(language)
+// console.log(language2)
+
+
+
 
   return (
     <>
       <h1 className='text-red-400'>My name is </h1>
       <h2 className='font-bold text-blue-600'>I am a programmer</h2>
-     <h1 id="demo"></h1>
+     
       
        
   
