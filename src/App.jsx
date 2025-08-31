@@ -1058,6 +1058,27 @@ console.log(name)
    console.log(Object.keys(object))
 
 }
+
+{
+  const cars = ["BMW", "Volvo", "Saab", "Ford"];
+  for(let i = 0; i < cars.length; i++ ){
+    console.log(cars[i])
+  }
+}
+{
+  const person = {
+  firstName : "John",
+  lastName  : "Doe",
+  age     : 50,
+  eyeColor  : "blue"
+};
+const myPerson = Object.entries(person)
+for(let i = 0; i<=myPerson.length; i++){
+  console.log(myPerson[i])
+}
+
+
+}
   return (
     <>
       <h1 className='text-red-400'>My name is </h1>
