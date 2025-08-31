@@ -1022,7 +1022,42 @@ console.log(result);
 
 
 
+// ES6 symbol
 
+{
+const palash1 = Symbol();
+const palash2 = Symbol();
+console.log(palash1)
+console.log(palash2)
+console.log(palash1 === palash2)
+}
+{const name = "palash"
+console.log(name)}
+{
+const name = new String("palash")
+console.log(name)
+}
+{
+  const cricket = Symbol.for("This is cricket symbol")
+    const object = {
+      name : "Palash",
+      age : 40,
+      [cricket] : "Bangladesh"
+    }
+    console.log(object)
+}
+{
+  const object = {};
+  object.name = "Javascript";
+  object.estd = "1995";
+  object[Symbol("founder")] = "Brandon Eich";
+  // for(let key in object){
+  //   console.log(key)
+  // }
+  
+   console.log(Object.keys(object))
+
+}
   return (
     <>
       <h1 className='text-red-400'>My name is </h1>
