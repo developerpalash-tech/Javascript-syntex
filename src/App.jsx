@@ -1076,8 +1076,11 @@ const myPerson = Object.entries(person)
 for(let i = 0; i<=myPerson.length; i++){
   console.log(myPerson[i])
 }
+}
 
-
+{
+  const fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(typeof fruits)
 }
   return (
     <>
