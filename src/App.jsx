@@ -1082,6 +1082,20 @@ for(let i = 0; i<=myPerson.length; i++){
   const fruits = ["Banana", "Orange", "Apple", "Mango"];
 console.log(typeof fruits)
 }
+
+
+{
+  const time = new Date().getHours();
+let greeting;
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+console.log(greeting)
+}
   return (
     <>
       <h1 className='text-red-400'>My name is </h1>
