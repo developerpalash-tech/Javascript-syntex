@@ -1096,6 +1096,21 @@ if (time < 10) {
 }
 console.log(greeting)
 }
+
+
+{
+  function findMax() {
+  let max = -Infinity;
+  for(let i = 0; i < arguments.length; i++) {
+    if (arguments[i] > max) {
+      max = arguments[i];
+    }
+  }
+  return max;
+}
+const myFindMax = findMax(8,9,10);
+console.log(myFindMax)
+}
   return (
     <>
       <h1 className='text-red-400'>My name is </h1>
