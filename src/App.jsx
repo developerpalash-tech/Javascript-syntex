@@ -1111,6 +1111,13 @@ console.log(greeting)
 const myFindMax = findMax(8,9,10);
 console.log(myFindMax)
 }
+
+
+{
+  const myArray = [1,2,3,4,5]
+  const iterator = myArray[Symbol.iterator]()
+  console.dir(iterator)
+}
   return (
     <>
       <h1 className='text-red-400'>My name is </h1>
