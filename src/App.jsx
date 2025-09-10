@@ -1,6 +1,6 @@
 
 import './App.css'
-import _ from "lodash";
+import _, { entries, values } from "lodash";
 
 function App() {
   
@@ -1065,37 +1065,6 @@ console.log(name)
     console.log(cars[i])
   }
 }
-{
-  const person = {
-  firstName : "John",
-  lastName  : "Doe",
-  age     : 50,
-  eyeColor  : "blue"
-};
-const myPerson = Object.entries(person)
-for(let i = 0; i<=myPerson.length; i++){
-  console.log(myPerson[i])
-}
-}
-
-{
-  const fruits = ["Banana", "Orange", "Apple", "Mango"];
-console.log(typeof fruits)
-}
-
-
-{
-  const time = new Date().getHours();
-let greeting;
-if (time < 10) {
-  greeting = "Good morning";
-} else if (time < 20) {
-  greeting = "Good day";
-} else {
-  greeting = "Good evening";
-}
-console.log(greeting)
-}
 
 
 {
@@ -1117,6 +1086,33 @@ console.log(myFindMax)
   const myArray = [1,2,3,4,5]
   const iterator = myArray[Symbol.iterator]()
   console.dir(iterator)
+}
+
+
+// Generator
+
+{
+  const object = {
+    value1 : 1,
+    value2 : 2,
+    value3 : 3,
+    value4 : 4,
+    value5 : 5
+  }
+
+  function *generator(obj){
+    const entry = Object.entries(obj)
+    for(let element of entry){
+      yield element[1]
+    }
+  }
+  const eterator = generator(object)
+
+  // console.log(eterator.next())
+  // console.log(eterator.next())
+  // console.log(eterator.next())
+
+  console.log([...eterator])
 }
   return (
     <>
