@@ -1114,6 +1114,61 @@ console.log(myFindMax)
 
   console.log([...eterator])
 }
+
+
+{
+  function *range(start, end ,step){
+    let current = start;
+
+    while(current <= end){
+      yield current;
+      current += step;
+    }
+  }
+
+  const eterator = range(1,1000,3);
+
+  console.log(eterator.next())
+  console.log(eterator.next())
+}
+
+
+{
+  function* generator(a, b){
+    let k = yield a + b;
+
+    let m = yield a + b + k;
+
+    yield a + b + k + m;
+  }
+  
+  const gen = generator(5, 10)
+
+  console.log(gen.next())
+  console.log(gen.next(8))
+  console.log(gen.next(17))
+}
+
+
+// Currying in Javascript
+{
+ function discount(disc){
+  return (price)=>{
+    return price - price*disc
+  }
+
+ }
+
+ let tecPercentDiscount = discount(0.1);
+ let twentyPercentDiscount = discount(0.2);
+
+ let customer1D = tecPercentDiscount(500);
+ let customer2D = tecPercentDiscount(600);
+ let customer3D = tecPercentDiscount(700);
+ let customer4D = twentyPercentDiscount(1500);
+ console.log(customer3D)
+ console.log(customer4D)
+}
   return (
     <>
       <h1 className='text-red-400'>My name is </h1>
