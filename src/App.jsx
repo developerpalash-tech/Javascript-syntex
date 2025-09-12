@@ -1162,12 +1162,18 @@ console.log(myFindMax)
  let tecPercentDiscount = discount(0.1);
  let twentyPercentDiscount = discount(0.2);
 
- let customer1D = tecPercentDiscount(500);
- let customer2D = tecPercentDiscount(600);
+//  let customer1D = tecPercentDiscount(500);
+//  let customer2D = tecPercentDiscount(600);
  let customer3D = tecPercentDiscount(700);
  let customer4D = twentyPercentDiscount(1500);
  console.log(customer3D)
  console.log(customer4D)
+}
+
+{
+  const multiply = (a)=> (b)=>(c)=> a * b * c
+
+  console.log(multiply(3)(4)(5))
 }
   return (
     <>
