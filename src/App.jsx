@@ -1175,6 +1175,17 @@ console.log(myFindMax)
 
   console.log(multiply(3)(4)(5))
 }
+
+
+// NaN
+
+{
+  const result1 = "Palash"/5;
+  const result2 = "Good Programmer"/8;
+  
+  console.log(result1)
+  console.log(result1 === result2)
+}
   return (
     <>
       <h1 className='text-red-400'>My name is </h1>
