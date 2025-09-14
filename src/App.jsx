@@ -1186,6 +1186,19 @@ console.log(myFindMax)
   console.log(result1)
   console.log(result1 === result2)
 }
+
+
+{
+  
+
+
+function myFunction(a) {
+   return a * a;
+   
+}
+console.log(myFunction(4))
+
+}
   return (
     <>
       <h1 className='text-red-400'>My name is </h1>
