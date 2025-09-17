@@ -1199,6 +1199,18 @@ function myFunction(a) {
 console.log(myFunction(4))
 
 }
+
+{
+  const hour = new Date().getHours(); 
+let greeting;
+
+if (hour < 18) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+console.log(greeting)
+}
   return (
     <>
       <h1 className='text-red-400'>My name is </h1>
