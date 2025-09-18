@@ -1211,6 +1211,12 @@ if (hour < 18) {
 }
 console.log(greeting)
 }
+
+
+{
+  const cars = new Array("Saab", "Volvo", "BMW");
+  console.log(cars)
+}
   return (
     <>
       <h1 className='text-red-400'>My name is </h1>
