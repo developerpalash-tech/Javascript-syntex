@@ -1217,6 +1217,20 @@ console.log(greeting)
   const cars = new Array("Saab", "Volvo", "BMW");
   console.log(cars)
 }
+
+
+{
+  const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+fruits.set("apples", 200);
+
+let numb = fruits.get("apples");
+console.log(numb)
+}
   return (
     <>
       <h1 className='text-red-400'>My name is </h1>
